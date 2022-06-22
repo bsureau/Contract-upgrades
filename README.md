@@ -1,8 +1,8 @@
 # Hardhat upgrades
 
-Exploring upgradeable contracts.
+Exploring upgradable smart contract patterns.
 
-## Solutions
+## Patterns
 
 ### Parameter:
 
@@ -28,7 +28,7 @@ Users always interact with the same proxy. You can change the smart contract add
 There are many proxy patterns :
 
 - Transparent proxy pattern: admin are only allowed to call admin functions that govern the upgrades. Users can only call non admin functions (aka implementation functions)
-- Universal upgradeable proxies: admin functions are in the implementation contract. Gas saving, but you’re stuck once contract is deployed if you need to upgrade later.
+- Universal upgradable proxies: admin functions are in the implementation contract. Gas saving, but you’re stuck once contract is deployed if you need to upgrade later.
 - Diamon pattern: allow for multiple implementation contracts. Allows you to better organize your code and have more granular upgrades
 
 ## Run the project
